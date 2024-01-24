@@ -1,8 +1,10 @@
-package com.example.homework
+package com.example.homework.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2
+import com.example.homework.bookmark.BookmarkFragment
+import com.example.homework.todo.TodoFragment
 import com.example.homework.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -19,12 +21,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViewPager() {
-        var viewPager2Adapter = ViewPager2Adapter(this)
-        viewPager2Adapter.addFragment(TodoFragment())
-        viewPager2Adapter.addFragment(BookmarkFragment())
+        var todoMainViewPagerAdapter = TodoMainViewPagerAdapter(this)
+        todoMainViewPagerAdapter.addFragment(TodoFragment())
+        todoMainViewPagerAdapter.addFragment(BookmarkFragment())
 
         binding.viewPager.apply {
-            adapter = viewPager2Adapter
+            adapter = todoMainViewPagerAdapter
 
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {})
 
