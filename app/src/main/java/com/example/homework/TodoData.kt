@@ -1,8 +1,11 @@
 package com.example.homework
 
-data class TodoData(
-    var title: String,
-    var description: String,
-    var switch: Boolean
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
-)
+@Parcelize
+data class TodoModel(
+    var title: String,
+    var description: String
+
+) : Parcelable

@@ -10,9 +10,9 @@ class TodoListAdapter():RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private lateinit var holdList: Holder
 
     inner class Holder(binding: RvTodoListBinding): RecyclerView.ViewHolder(binding.root) {
-        val switch = binding.swTodo3
-        val title = binding.tvTodoTitle3
-        val description = binding.tvTodoDescription3
+        val switch = binding.swTodo
+        val title = binding.tvTodoTitle
+        val description = binding.tvTodoDescription
     }
 
     interface ItemClick {

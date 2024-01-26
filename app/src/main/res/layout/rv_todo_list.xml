@@ -13,27 +13,27 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tv_todo_title3"
+            android:id="@+id/tv_todo_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_2"
+            android:text="@string/main_tab_todo_title"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_todo_description3"
+            android:id="@+id/tv_todo_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="@string/description_2"
+            android:text="@string/main_tab_bookmark_title"
             android:textSize="15dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_todo_title3" />
+            app:layout_constraintTop_toBottomOf="@id/tv_todo_title" />
 
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/sw_todo_3"
+            android:id="@+id/sw_todo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"

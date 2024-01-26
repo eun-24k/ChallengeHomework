@@ -1,5 +1,7 @@
 package com.example.homework
 
+import com.example.homework.todo.TodoData
+
 object TodoDatabase {
 
     var totalTodoList: ArrayList<TodoData> = arrayListOf(

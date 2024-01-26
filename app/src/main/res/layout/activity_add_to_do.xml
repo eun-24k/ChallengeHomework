@@ -7,7 +7,7 @@
     android:paddingStart="20dp"
     android:paddingEnd="20dp"
     android:paddingBottom="20dp"
-    tools:context=".AddToDoActivity">
+    tools:context=".todo.content.AddTodoActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tb_activity_to_do"
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/todo"
+            android:text="@string/todo_create_title"
             android:textSize="28dp"
             android:layout_marginStart="20dp"/>
     </androidx.appcompat.widget.Toolbar>
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="18"
-        android:hint="@string/title"
+        android:hint="@string/todo_create_content_title_hint"
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="18"
-        android:hint="@string/description"
+        android:hint="@string/todo_create_content_description_hint"
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,5 +62,5 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="20dp"
-        android:text="@string/add"/>
+        android:text="@string/todo_create_submit"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
