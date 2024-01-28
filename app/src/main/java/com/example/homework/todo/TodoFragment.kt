@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
+import com.example.homework.TodoDatabase
 import com.example.homework.databinding.FragmentTodoBinding
 import com.example.homework.todo.list.TodoListViewModel
 
@@ -16,6 +17,9 @@ class TodoFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel: TodoListViewModel by viewModels()
+
+    private val todoListAdapter = TodoListAdapter()
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,6 +40,8 @@ class TodoFragment : Fragment() {
 
     private fun initView() {
 
+        binding.recyclerView.adapter = todoListAdapter
+        todoListAdapter.submitList(TodoDatabase.totalTodoList)
 
     }
 
